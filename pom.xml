@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2023-2024 ConnectorIO Sp. z o.o.
+ -
+ - Licensed under the Apache License, Version 2.0 (the "License");
+ - you may not use this file except in compliance with the License.
+ - You may obtain a copy of the License at
+ -
+ -     http://www.apache.org/licenses/LICENSE-2.0
+ -
+ - Unless required by applicable law or agreed to in writing, software
+ - distributed under the License is distributed on an "AS IS" BASIS,
+ - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ - See the License for the specific language governing permissions and
+ - limitations under the License.
+ -
+ - SPDX-License-Identifier: Apache-2.0
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.thing4</groupId>
+    <artifactId>parent</artifactId>
+    <version>2</version>
+    <relativePath />
+  </parent>
+
+  <groupId>org.thing4.openhab</groupId>
+  <artifactId>bom</artifactId>
+  <version>3.0.0-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <name>Thing4 - openHAB BOM</name>
+  <description>This project contains the BOM resources for openHAB</description>
+
+  <modules>
+    <module>core</module>
+    <module>compile</module>
+    <module>compile-model</module>
+    <module>runtime</module>
+    <module>test</module>
+
+    <!-- generated boms -->
+    <module>generated</module>
+  </modules>
+
+  <properties>
+    <openhab-core.version>3.0.0</openhab-core.version>
+
+    <bom.generated />
+    <bom.name />
+    <bom.artifactId />
+    <bom.forceScope>none</bom.forceScope>
+  </properties>
+
+  <scm>
+    <connection>scm:git:https://github.com/thingfour/openhab-bom.git</connection>
+    <developerConnection>scm:git:git@github.com:thingfour/openhab-bom.git</developerConnection>
+    <url>https://github.com/thingfour/openhab-bom</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/thingfour/openhab-bom/issues</url>
+  </issueManagement>
+
+  <!-- A bit of artificial dependency just to let maven versions plugin work with ${openhab-core.version} placeholder -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.openhab.core.bundles</groupId>
+        <artifactId>org.openhab.core</artifactId>
+        <version>${openhab-core.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.3.0</version>
+          <executions>
+            <execution>
+              <id>copy</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>org.openhab.core.bom</groupId>
+                    <artifactId>${bom.artifactId}</artifactId>
+                    <version>${openhab-core.version}</version>
+                    <type>pom</type>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <destFileName>openhab-bom.xml</destFileName>
+                  </artifactItem>
+                  <artifactItem>
+                    <groupId>org.openhab.core</groupId>
+                    <artifactId>org.openhab.core.reactor</artifactId>
+                    <version>${openhab-core.version}</version>
+                    <type>pom</type>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <destFileName>openhab-reactor.xml</destFileName>
+                  </artifactItem>
+                </artifactItems>
+                <!-- other configurations here -->
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>xml-maven-plugin</artifactId>
+          <version>1.0.2</version>
+          <configuration>
+            <forceCreation>true</forceCreation>
+            <transformationSets>
+              <transformationSet>
+                <dir>${project.build.directory}/</dir>
+                <outputDir>${project.directory}/../../generated/${bom.generated}</outputDir>
+                <stylesheet>${project.basedir}/../bom.xsl</stylesheet>
+                <parameters>
+                  <parameter>
+                    <name>PWD</name>
+                    <value>${project.build.directory}</value>
+                  </parameter>
+                  <parameter>
+                    <name>VERSION</name>
+                    <value>${openhab-core.version}</value>
+                  </parameter>
+                  <parameter>
+                    <name>RESULT_GROUP_ID</name>
+                    <value>org.thing4.openhab.bom.generated</value>
+                  </parameter>
+                  <parameter>
+                    <name>RESULT_NAME</name>
+                    <value>${bom.name}</value>
+                  </parameter>
+                  <parameter>
+                    <name>RESULT_FORCE_SCOPE</name>
+                    <value>${bom.forceScope}</value>
+                  </parameter>
+                  <parameter>
+                    <name>BOM_PARENT_GROUP_ID</name>
+                    <value>org.thing4.openhab.bom</value>
+                  </parameter>
+                  <parameter>
+                    <name>BOM_PARENT_ARTIFACT_ID</name>
+                    <value>generated</value>
+                  </parameter>
+                  <parameter>
+                    <name>BOM_VERSION</name>
+                    <value>${project.version}</value>
+                  </parameter>
+                </parameters>
+                <includes>
+                  <include>openhab-bom.xml</include>
+                </includes>
+                <fileMappers>
+                  <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.RegExpFileMapper">
+                    <pattern>openhab-bom.xml</pattern>
+                    <replacement>pom.xml</replacement>
+                  </fileMapper>
+                </fileMappers>
+              </transformationSet>
+            </transformationSets>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>transform</goal>
+              </goals>
+              <phase>compile</phase>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>
