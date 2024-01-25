@@ -1,0 +1,16 @@
+name: Build pushed commit
+
+on:
+  push:
+    branches: [ "*" ]
+
+jobs:
+  build:
+    permissions:
+      checks: write
+      contents: read
+    uses: 'connectorio/gh-actions-shared/.github/workflows/maven.yml@master'
+    secrets: inherit
+    with:
+      openhab: true
+      server_id: sonatype-central
