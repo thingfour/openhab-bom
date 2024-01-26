@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.thing4.openhab</groupId>
     <artifactId>bom</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.4-connectorio-1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
