@@ -16,14 +16,14 @@
  -
  - SPDX-License-Identifier: Apache-2.0
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     
   <modelVersion>4.0.0</modelVersion>
     
   <parent>
     <groupId>org.thing4.openhab.bom</groupId>
     <artifactId>generated</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.2-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
     
@@ -43,28 +43,48 @@
       <dependency>
         <groupId>org.osgi</groupId>
         <artifactId>osgi.core</artifactId>
-        <version>6.0.0</version>
+        <version>8.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.osgi</groupId>
-        <artifactId>osgi.cmpn</artifactId>
-        <version>7.0.0</version>
+        <artifactId>org.osgi.service.cm</artifactId>
+        <version>1.6.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.service.component</artifactId>
+        <version>1.5.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.service.component.annotations</artifactId>
+        <version>1.5.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.service.event</artifactId>
+        <version>1.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.service.jaxrs</artifactId>
+        <version>1.0.1</version>
       </dependency>
       <dependency>
         <groupId>org.osgi</groupId>
         <artifactId>osgi.annotation</artifactId>
-        <version>7.0.0</version>
+        <version>8.1.0</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.7.21</version>
+        <version>2.0.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jdt</groupId>
         <artifactId>org.eclipse.jdt.annotation</artifactId>
-        <version>2.2.100</version>
+        <version>2.2.600</version>
       </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
@@ -73,36 +93,46 @@
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>commons-io</groupId>
-        <artifactId>commons-io</artifactId>
-        <version>2.2</version>
-        <scope>compile</scope>
-      </dependency>
-      <dependency>
-        <groupId>commons-lang</groupId>
-        <artifactId>commons-lang</artifactId>
-        <version>2.6</version>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.12.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.californium</groupId>
         <artifactId>californium-core</artifactId>
-        <version>2.0.0</version>
+        <version>2.7.4</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.californium</groupId>
         <artifactId>scandium</artifactId>
-        <version>2.0.0</version>
+        <version>2.7.4</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.californium</groupId>
         <artifactId>element-connector</artifactId>
-        <version>2.0.0</version>
+        <version>2.7.4</version>
+        <exclusions>
+                  
+          <exclusion>
+                      
+            <groupId>net.i2p.crypto</groupId>
+                      
+            <artifactId>eddsa</artifactId>
+                    
+          </exclusion>
+                
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.orbit.bundles</groupId>
+        <artifactId>net.i2p.crypto.eddsa</artifactId>
+        <version>0.3.0.v20220506-1020</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.orbit.bundles</groupId>
         <artifactId>com.google.gson</artifactId>
-        <version>2.8.2.v20180104-1110</version>
+        <version>2.10.1.v20230109-0753</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -114,67 +144,138 @@
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-client</artifactId>
-        <version>9.4.20.v20190813</version>
+        <version>9.4.52.v20230823</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-proxy</artifactId>
-        <version>9.4.20.v20190813</version>
+        <version>9.4.52.v20230823</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
-        <version>9.4.20.v20190813</version>
+        <version>9.4.52.v20230823</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-servlet</artifactId>
-        <version>9.4.20.v20190813</version>
+        <version>9.4.52.v20230823</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-client</artifactId>
-        <version>9.4.20.v20190813</version>
+        <version>9.4.52.v20230823</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-servlet</artifactId>
+        <version>9.4.52.v20230823</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-server</artifactId>
+        <version>9.4.52.v20230823</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.http2</groupId>
+        <artifactId>http2-client</artifactId>
+        <version>9.4.52.v20230823</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.http2</groupId>
+        <artifactId>http2-server</artifactId>
+        <version>9.4.52.v20230823</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.jmdns</groupId>
         <artifactId>jmdns</artifactId>
-        <version>3.5.6</version>
+        <version>3.5.7</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.jupnp</groupId>
         <artifactId>org.jupnp</artifactId>
-        <version>2.5.2</version>
+        <version>2.7.1.OH1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>javax.measure</groupId>
         <artifactId>unit-api</artifactId>
-        <version>1.0</version>
+        <version>2.2</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>tec.uom</groupId>
-        <artifactId>uom-se</artifactId>
-        <version>1.0.10</version>
+        <groupId>si.uom</groupId>
+        <artifactId>si-units</artifactId>
+        <version>2.1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>tec.uom.lib</groupId>
-        <artifactId>uom-lib-common</artifactId>
-        <version>1.0.3</version>
+        <groupId>tech.units</groupId>
+        <artifactId>indriya</artifactId>
+        <version>2.2</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.hivemq</groupId>
         <artifactId>hivemq-mqtt-client</artifactId>
-        <version>1.1.2</version>
+        <version>1.3.3</version>
+        <scope>compile</scope>
+        <exclusions>
+                  
+          <exclusion>
+                      
+            <groupId>org.jetbrains</groupId>
+                      
+            <artifactId>annotations</artifactId>
+                    
+          </exclusion>
+                
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.web</groupId>
+        <artifactId>pax-web-api</artifactId>
+        <version>8.0.22</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.web</groupId>
+        <artifactId>pax-web-extender-whiteboard</artifactId>
+        <version>8.0.22</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.web</groupId>
+        <artifactId>pax-web-jetty</artifactId>
+        <version>8.0.22</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.web</groupId>
+        <artifactId>pax-web-jsp</artifactId>
+        <version>8.0.22</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.web</groupId>
+        <artifactId>pax-web-runtime</artifactId>
+        <version>8.0.22</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.web</groupId>
+        <artifactId>pax-web-spi</artifactId>
+        <version>8.0.22</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -182,12 +283,34 @@
         <artifactId>javaxcomm</artifactId>
         <version>1.0.1</version>
         <scope>compile</scope>
+        <exclusions>
+                  
+          <exclusion>
+                      
+            <groupId>commons-net</groupId>
+                      
+            <artifactId>commons-net</artifactId>
+                    
+          </exclusion>
+                
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.neuronrobotics</groupId>
         <artifactId>nrjavaserial</artifactId>
-        <version>3.12.0</version>
+        <version>3.14.0</version>
         <scope>compile</scope>
+        <exclusions>
+                  
+          <exclusion>
+                      
+            <groupId>commons-net</groupId>
+                      
+            <artifactId>commons-net</artifactId>
+                    
+          </exclusion>
+                
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.felix</groupId>
@@ -204,13 +327,13 @@
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-annotations</artifactId>
-        <version>2.1.0</version>
+        <version>2.2.15</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-core</artifactId>
-        <version>2.1.0</version>
+        <version>2.2.15</version>
         <scope>compile</scope>
         <exclusions>
                   
@@ -227,7 +350,7 @@
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
         <artifactId>swagger-jaxrs2</artifactId>
-        <version>2.1.0</version>
+        <version>2.2.15</version>
         <scope>compile</scope>
         <exclusions>
                   
@@ -244,7 +367,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.13</version>
+        <version>1.4.20</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -316,7 +439,31 @@
       <dependency>
         <groupId>org.bitbucket.b_c</groupId>
         <artifactId>jose4j</artifactId>
-        <version>0.7.0</version>
+        <version>0.9.3</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.openhab.osgiify</groupId>
+        <artifactId>io.methvin.directory-watcher</artifactId>
+        <version>0.18.0</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna</artifactId>
+        <version>5.13.0</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna-platform</artifactId>
+        <version>5.13.0</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.openhab</groupId>
+        <artifactId>base-fixes</artifactId>
+        <version>1.0.0</version>
         <scope>compile</scope>
       </dependency>
     </dependencies>
