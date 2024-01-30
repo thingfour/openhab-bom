@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.thing4.openhab</groupId>
     <artifactId>bom</artifactId>
-    <version>3.1.1-SNAPSHOT</version>
+    <version>3.1.1</version>
   </parent>
 
   <artifactId>runtime</artifactId>
