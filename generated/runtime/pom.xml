@@ -16,7 +16,7 @@
  -
  - SPDX-License-Identifier: Apache-2.0
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     
   <modelVersion>4.0.0</modelVersion>
     
@@ -45,7 +45,7 @@
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>xtext-dev-bom</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>import</scope>
         <type>pom</type>
         <exclusions>
@@ -64,7 +64,7 @@
       <dependency>
         <groupId>org.eclipse.platform</groupId>
         <artifactId>org.eclipse.osgi</artifactId>
-        <version>3.16.300</version>
+        <version>3.17.200</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -87,7 +87,7 @@
       <dependency>
         <groupId>org.apache.felix</groupId>
         <artifactId>org.apache.felix.configadmin</artifactId>
-        <version>1.9.22</version>
+        <version>1.9.24</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -316,7 +316,7 @@
       <dependency>
         <groupId>org.apache.felix</groupId>
         <artifactId>org.apache.felix.webconsole</artifactId>
-        <version>4.7.0</version>
+        <version>4.7.2</version>
       </dependency>
       <dependency>
         <groupId>org.apache.felix</groupId>
@@ -336,7 +336,7 @@
       <dependency>
         <groupId>org.apache.felix</groupId>
         <artifactId>org.apache.felix.gogo.runtime</artifactId>
-        <version>1.1.4</version>
+        <version>1.1.6</version>
       </dependency>
       <dependency>
         <groupId>org.apache.felix</groupId>
@@ -365,13 +365,13 @@
       <dependency>
         <groupId>org.ops4j.pax.logging</groupId>
         <artifactId>pax-logging-api</artifactId>
-        <version>2.0.12</version>
+        <version>2.0.16</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.logging</groupId>
         <artifactId>pax-logging-log4j2</artifactId>
-        <version>2.0.12</version>
+        <version>2.0.16</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -383,7 +383,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>1.4</version>
+        <version>2.11.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -415,7 +415,7 @@
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.8.6</version>
+        <version>2.8.9</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -433,7 +433,7 @@
       <dependency>
         <groupId>org.jupnp</groupId>
         <artifactId>org.jupnp</artifactId>
-        <version>2.6.0</version>
+        <version>2.6.1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -487,223 +487,223 @@
       <dependency>
         <groupId>com.neuronrobotics</groupId>
         <artifactId>nrjavaserial</artifactId>
-        <version>5.2.1</version>
+        <version>5.2.1.OH1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.18</version>
+        <version>1.4.19</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.web</groupId>
         <artifactId>pax-web-api</artifactId>
-        <version>7.3.23</version>
+        <version>7.3.25</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.web</groupId>
         <artifactId>pax-web-extender-whiteboard</artifactId>
-        <version>7.3.23</version>
+        <version>7.3.25</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.web</groupId>
         <artifactId>pax-web-jetty</artifactId>
-        <version>7.3.23</version>
+        <version>7.3.25</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.web</groupId>
         <artifactId>pax-web-jsp</artifactId>
-        <version>7.3.23</version>
+        <version>7.3.25</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.web</groupId>
         <artifactId>pax-web-runtime</artifactId>
-        <version>7.3.23</version>
+        <version>7.3.25</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.web</groupId>
         <artifactId>pax-web-spi</artifactId>
-        <version>7.3.23</version>
+        <version>7.3.25</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-client</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-continuation</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-deploy</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-http</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-io</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-jaas</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-jmx</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-jndi</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-plus</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-proxy</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-rewrite</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-security</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-jaspi</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-servlet</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-servlets</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-util</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-util-ajax</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-webapp</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-api</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-client</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-common</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>javax-websocket-client-impl</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>javax-websocket-server-impl</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-server</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty.websocket</groupId>
         <artifactId>websocket-servlet</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-xml</artifactId>
-        <version>9.4.43.v20210629</version>
+        <version>9.4.46.v20220331</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.xbean</groupId>
         <artifactId>xbean-bundleutils</artifactId>
-        <version>4.19</version>
+        <version>4.21</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.xbean</groupId>
         <artifactId>xbean-finder</artifactId>
-        <version>4.19</version>
+        <version>4.21</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -714,38 +714,55 @@
       </dependency>
       <dependency>
         <groupId>org.eclipse.orbit.bundles</groupId>
-        <artifactId>org.antlr.runtime</artifactId>
-        <version>3.2.0.v201101311130</version>
+        <artifactId>com.google.inject</artifactId>
+        <version>5.0.1.v20210324-2015</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.orbit.bundles</groupId>
         <artifactId>io.github.classgraph</artifactId>
-        <version>4.8.35.v20190528-1517</version>
+        <version>4.8.138.v20211212-1642 </version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.orbit.bundles</groupId>
+        <artifactId>org.antlr.runtime</artifactId>
+        <version>3.2.0.v201101311130</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtend</groupId>
         <artifactId>org.eclipse.xtend.lib</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtend</groupId>
         <artifactId>org.eclipse.xtend.lib.macro</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
+        <exclusions>
+                  
+          <exclusion>
+                      
+            <groupId>com.google.inject</groupId>
+                      
+            <artifactId>guice</artifactId>
+                    
+          </exclusion>
+                
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.common.types</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
         <exclusions>
                   
@@ -762,7 +779,7 @@
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.ide</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
         <exclusions>
                   
@@ -779,25 +796,36 @@
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.util</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
+        <exclusions>
+                  
+          <exclusion>
+                      
+            <groupId>com.google.inject</groupId>
+                      
+            <artifactId>guice</artifactId>
+                    
+          </exclusion>
+                
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.xbase</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.xbase.ide</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.xbase.lib</artifactId>
-        <version>2.25.0</version>
+        <version>2.26.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -870,61 +898,61 @@
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-core</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6.1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-cbor</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-xml</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-yaml</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-jsr310</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.jaxrs</groupId>
         <artifactId>jackson-jaxrs-base</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.jaxrs</groupId>
         <artifactId>jackson-jaxrs-json-provider</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.module</groupId>
         <artifactId>jackson-module-jaxb-annotations</artifactId>
-        <version>2.12.5</version>
+        <version>2.12.6</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
