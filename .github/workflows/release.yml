@@ -21,6 +21,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write
     uses: 'connectorio/gh-actions-shared/.github/workflows/release.yml@master'
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
@@ -29,6 +31,7 @@ jobs:
       CI_RELEASE_PASSWORD: ${{ secrets.CI_RELEASE_PASSWORD }}
     with:
       openhab: false
+      server_id: 'sonatype-nexus-staging-s01'
       release_version: ${{ inputs.release_version }}
       development_version: ${{ inputs.development_version }}
       perform_version: ${{ inputs.perform_version }}
