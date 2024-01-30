@@ -9,5 +9,5 @@ if [[ -z "$version" ]]; then
 fi
 
 mvn versions:set -DnewVersion="${version}-SNAPSHOT" -DgenerateBackupPoms=false
-mvn versions:update-property -Dproperty=openhab-core.version -DnewVersion="${version}" -DgenerateBackupPoms=false -N
+mvn versions:update-property -Dproperty=openhab-core.version -DnewVersion="[${version},$version]" -DgenerateBackupPoms=false -N
 mvn clean install && mvn clean install
