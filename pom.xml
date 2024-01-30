@@ -47,7 +47,7 @@
   </modules>
 
   <properties>
-    <openhab-core.version>3.4.1</openhab-core.version>
+    <openhab-core.version>3.4.2</openhab-core.version>
 
     <bom.generated />
     <bom.name />
