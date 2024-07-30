@@ -18,3 +18,4 @@ jobs:
       server_id: thing4-snapshots
       deploy: true
       skip_test_publish: true
+      additional_profiles: 'thing4,openhab'
