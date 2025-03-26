@@ -28,7 +28,7 @@
 
   <groupId>org.thing4.openhab</groupId>
   <artifactId>bom</artifactId>
-  <version>4.2.0-SNAPSHOT</version>
+  <version>4.2.1-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -47,7 +47,7 @@
   </modules>
 
   <properties>
-    <openhab-core.version>4.2.0</openhab-core.version>
+    <openhab-core.version>4.2.1</openhab-core.version>
 
     <bom.generated />
     <bom.name />
