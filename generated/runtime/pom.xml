@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.thing4.openhab.bom</groupId>
     <artifactId>generated</artifactId>
-    <version>4.2.0-SNAPSHOT</version>
+    <version>4.3.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
     
@@ -45,7 +45,7 @@
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>xtext-dev-bom</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>import</scope>
         <type>pom</type>
         <exclusions>
@@ -455,7 +455,7 @@
       <dependency>
         <groupId>org.jmdns</groupId>
         <artifactId>jmdns</artifactId>
-        <version>3.5.9</version>
+        <version>3.5.12</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -521,7 +521,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.20</version>
+        <version>1.4.21</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -761,7 +761,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>33.2.0-jre</version>
+        <version>33.3.0-jre</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -773,7 +773,7 @@
       <dependency>
         <groupId>io.github.classgraph</groupId>
         <artifactId>classgraph</artifactId>
-        <version>4.8.172</version>
+        <version>4.8.174</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -785,25 +785,25 @@
       <dependency>
         <groupId>org.eclipse.xtend</groupId>
         <artifactId>org.eclipse.xtend.lib</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtend</groupId>
         <artifactId>org.eclipse.xtend.lib.macro</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.common.types</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
         <exclusions>
                   
@@ -820,7 +820,7 @@
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.ide</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
         <exclusions>
                   
@@ -837,25 +837,25 @@
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.util</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.xbase</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.xbase.ide</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.xtext</groupId>
         <artifactId>org.eclipse.xtext.xbase.lib</artifactId>
-        <version>2.35.0</version>
+        <version>2.36.0</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
@@ -903,7 +903,7 @@
       <dependency>
         <groupId>de.focus-shift</groupId>
         <artifactId>jollyday-jackson</artifactId>
-        <version>0.28.1</version>
+        <version>0.35.1</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
