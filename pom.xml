@@ -28,7 +28,7 @@
 
   <groupId>org.thing4.openhab</groupId>
   <artifactId>bom</artifactId>
-  <version>4.3.6</version>
+  <version>4.3.7-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -59,7 +59,7 @@
     <connection>scm:git:https://github.com/thingfour/openhab-bom.git</connection>
     <developerConnection>scm:git:git@github.com:thingfour/openhab-bom.git</developerConnection>
     <url>https://github.com/thingfour/openhab-bom</url>
-    <tag>4.3.6</tag>
+    <tag>4.0.1</tag>
   </scm>
 
   <issueManagement>
