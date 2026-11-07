@@ -2,7 +2,7 @@ name: Build pull request
 
 on:
   pull_request:
-    branches: [ "master", "3.*" , "4.*" ]
+    branches: [ "master", "3.*" , "4.*", "5.*" ]
 
 jobs:
   build:
@@ -19,3 +19,5 @@ jobs:
       deploy: true
       skip_test_publish: true
       additional_profiles: 'thing4,openhab'
+      mvn_server_origins: |
+        thing4-snapshots:https://repository.connectorio.cloud
